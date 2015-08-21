@@ -25,3 +25,11 @@
 <br />
 
 <%= link_to 'New Location', new_location_path %>
+
+
+<div id="map_index" data-index-source="<%= url_for :action => :index %>"></div>
+
+<%= javascript_include_tag "locations/index" %>
+
+
+

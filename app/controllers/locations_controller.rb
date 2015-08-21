@@ -8,8 +8,25 @@ class LocationsController < ApplicationController
       format.html # index.html.erb
       format.json { render json: @locations }
     end
+
+    #render :json => {:num_updates => @user.num_updates}.to_json
+   #  format.json{
+   #   render :json => @user.to_json
+   # }
   end
 
+
+  def mandar
+    @locations = Location.all
+
+    respond_to do |format|
+      format.json { render json: @locations }
+    end
+  end
+
+    
+   
+  
   # GET /locations/1
   # GET /locations/1.json
   def show
@@ -20,6 +37,7 @@ class LocationsController < ApplicationController
       format.json { render json: @location }
     end
   end
+
 
   # GET /locations/new
   # GET /locations/new.json

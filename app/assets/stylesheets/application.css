@@ -12,9 +12,12 @@
  *= require_tree .
 */
 
-
-
-#map {
-      width: 400px;
-      height: 400px;
+#map_index {
+      width: 800px;
+      height: 800px;
     }
+
+#map_show {
+      width: 800px;
+      height: 800px;
+    }    
